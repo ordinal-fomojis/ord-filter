@@ -23,7 +23,7 @@ export default function Home({ config }) {
               content={config.description}
               key="desc"/>
       </Head>
-      <iframe src="http://www.google.com" style={{width: "100%", height: "100vh"}}/>
+      <iframe src="https://www.google.com/" style={{width: "100%", height: "100vh"}}/>
     </>
   )
 }
