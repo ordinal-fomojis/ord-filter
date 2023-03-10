@@ -6,10 +6,10 @@ import { useRouter } from 'next/router'
 
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from '../styles/collection.module.sass'
-import IconButton from '../components/icon-button'
-import Icon from '../components/icon'
-import Button from '../components/button'
+import styles from '../../styles/collection.module.sass'
+import IconButton from '../../components/icon-button'
+import Icon from '../../components/icon'
+import Button from '../../components/button'
 import { fetchInscriptionNumber } from '@/lib/utils'
 
 export async function getStaticProps() {

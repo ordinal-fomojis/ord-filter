@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import Head from 'next/head'
 
-import styles from '../styles/inscription.module.sass'
+import styles from '../../styles/inscription.module.sass'
 import Image from 'next/image'
 import Button from '../../components/button'
 import IconButton from '../../components/icon-button'
