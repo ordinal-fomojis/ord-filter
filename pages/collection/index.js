@@ -76,13 +76,13 @@ function setQuery(router, filterList) {
   }
 
   if (query.length > 0) {
-    router.push(`/?${query}`, undefined, {shallow: true})
+    router.push(`/collection?${query}`, undefined, {shallow: true})
   } else {
-    router.push("/", undefined, {shallow: true})
+    router.push("/collection", undefined, {shallow: true})
   }
 }
 
-function parseFilters(router, traitCounts, sortSelection, sortReversed) {
+function parseFilters(router, traitCounts) {
   let filterQuery = router.query['filters']
   if (!filterQuery) {
     return []
@@ -226,7 +226,7 @@ export default function Collection({ inscriptions, traitCounts, config }) {
           </div>
           <div className={styles.collectionContainer}>
             {filteredInscriptions.map((inscription) => 
-              <Link href={`/${inscription.id}`} key={inscription.meta.name}>
+              <Link href={`/collection/${inscription.id}`} key={inscription.meta.name}>
                 <div className={styles.imageCard}>
                   <div className={styles.imageContainer}>
                     <Image src={`https://ordinals.com/content/${inscription.id}`}

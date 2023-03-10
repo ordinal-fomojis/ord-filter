@@ -119,7 +119,7 @@ function TraitsInfo({ inscription }) {
 function TraitCard({ attribute }) {
   let query = encodeURIComponent(`${attribute.trait_type}-${attribute.value}`)
   return (
-    <Link href={`/?filters=${query}`}>
+    <Link href={`/collection?filters=${query}`}>
       <div className={styles.attribute}>
         <p className={styles.property}>{attribute.trait_type}</p>
         <p className={styles.trait}>{attribute.value}</p>

@@ -23,7 +23,7 @@ export default function Home({ config }) {
               content={config.description}
               key="desc"/>
       </Head>
-      <iframe src="https://ordinals.com/" style={{width: "100%", height: "100vh"}}/>
+      <iframe src="https://ordinals.com/" style={{ width: "100%", height: "100vh" }}/>
     </>
   )
 }
